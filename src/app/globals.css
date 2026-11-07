@@ -1,2 +1,116 @@
 @import "tailwindcss";
-@import "@heroui/styles"; 
+@import "@heroui/styles";
+
+/* ==========================================
+   PROJECTS SECTION ANIMATIONS
+   ========================================== */
+
+/* Seamless marquee loop (track holds 2 identical copies) */
+@keyframes project-marquee {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+/* Light sweep across a project card on hover */
+@keyframes shine-sweep {
+    0% {
+        transform: translateX(-150%) skewX(-20deg);
+    }
+    100% {
+        transform: translateX(450%) skewX(-20deg);
+    }
+}
+
+/* Soft floating bubbles inside card covers */
+@keyframes float-y {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+/* Scroll reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== FOOTER WAVES ===== */
+
+/* Seamless horizontal drift (SVG holds 2 identical wave cycles) */
+@keyframes wave-drift {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+/* Gentle vertical breathing of the whole wave stack */
+@keyframes wave-bob {
+    0%,
+    100% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(1.09);
+    }
+}
+
+/* Small shimmer bubbles floating over the waves */
+@keyframes bubble-float {
+    0%,
+    100% {
+        transform: translateY(0);
+        opacity: 0.45;
+    }
+    50% {
+        transform: translateY(-18px);
+        opacity: 1;
+    }
+}
+
+/* Article list: big outlined numbers that light up on row hover */
+.article-num {
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(8, 125, 245, 0.35);
+    transition:
+        -webkit-text-stroke-color 0.4s ease,
+        transform 0.4s ease;
+}
+
+.group:hover .article-num {
+    -webkit-text-stroke-color: #087df5;
+    transform: translateY(-5px);
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+    .wave-layer,
+    .wave-bob,
+    .wave-bubble {
+        animation: none !important;
+    }
+}

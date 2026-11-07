@@ -69,31 +69,35 @@ function Hero() {
 
             <div
                 id="home"
-                className="relative h-dvh overflow-hidden  bg-gradient-to-br from-[#e4f1ff] via-[#f5faff] to-[#9bd5ff] text-[#102b4c]"
+                className="relative overflow-hidden bg-gradient-to-br from-[#e4f1ff] via-[#f5faff] to-[#9bd5ff] text-[#102b4c]"
             >
-                {/* Background Decorations */}
-                
+                {/* ================= BACKGROUND DECORATIONS ================= */}
 
+                {/* Big ring (top left) */}
+                <div className="pointer-events-none absolute -left-48 -top-70 h-[480px] w-[480px] rounded-full border-[65px] border-[#75c7ff]/40" />
+
+                {/* Soft glow (right) */}
                 <div className="pointer-events-none absolute -right-48 top-40 h-[500px] w-[500px] rounded-full bg-[#8bcfff]/20 blur-[100px]" />
 
+                {/* Soft glow (bottom left) */}
                 <div className="pointer-events-none absolute bottom-0 left-1/4 h-72 w-72 rounded-full bg-[#53baff]/20 blur-[100px]" />
 
-                <div className="relative z-10 mx-auto max-w-[1200px] px-4 pb-6 pt-5 sm:px-6 lg:px-8">
+                <div className="relative z-10 mx-auto max-w-[1200px] px-4 pb-14 pt-8 sm:px-6 md:pt-12 lg:px-8">
 
 
 
 
                     {/* ================= HERO SECTION ================= */}
 
-                    <section className="mt-8 container px-2 mx-auto relative grid  items-center gap-5 py-12 md:grid-cols-2 md:py-5 ">
+                    <section className="relative mt-2 grid items-center gap-8 px-2 py-6 md:mt-0 md:grid-cols-2 md:gap-6 md:py-8 lg:gap-10">
 
                         {/* LEFT CONTENT */}
 
                         <div className=" relative z-20  space-y-4 md:order-1">
 
                             {/* Availability */}
-                            <div className="inline-flex items-center gap-2 rounded-full border border-green-100 bg-green-100/70 px-3 py-1 text-[10px] font-bold text-green-700">
-                                <span className="h-2 w-2 animate-pulse rounded-full bg-green-500" />
+                            <div className="inline-flex items-center gap-2 rounded-full border border-green-100 bg-[#087ff5fb] px-3 py-1 text-[10px] font-bold text-[#ffff]">
+                                <span className="h-2 w-2 animate-pulse rounded-full bg-[#ffff]" />
                                 Available for Remote Work
                             </div>
 
@@ -176,16 +180,14 @@ function Hero() {
 
                         {/* ================= RIGHT IMAGE ================= */}
 
-                        <div className="relative  flex h-[360px] items-end justify-center md:order-2 ">
-
-                            {/* Main Circle */}
-                            {/* <div className="absolute bottom-5 left-1/2 h-[300px] w-[300px] -translate-x-1/2 rounded-full bg-gradient-to-br from-[#55c4ff] via-[#159cf5] to-[#a3ddff] shadow-[0_0_70px_rgba(46,169,255,0.25)] sm:h-[350px] sm:w-[350px] lg:h-[390px] lg:w-[390px]" /> */}
+                        {/* Height scales with screen size -> image stays responsive */}
+                        <div className="relative flex h-[300px] items-end justify-center sm:h-[360px] md:order-2 md:h-[400px] lg:h-[470px]">
 
                             {/* Outer Circle */}
-                            <div className="absolute bottom-0 left-1/2 h-[350px] w-[350px] -translate-x-1/2 rounded-full border border-white/50 sm:h-[410px] sm:w-[410px] lg:h-[450px] lg:w-[450px]" />
+                            <div className="absolute bottom-0 left-1/2 h-[270px] w-[270px] -translate-x-1/2 rounded-full border border-white/50 sm:h-[340px] sm:w-[340px] md:h-[380px] md:w-[380px] lg:h-[450px] lg:w-[450px]" />
 
-                            {/* Profile Image */}
-                            <div className="absolute bottom-0 z-10 h-[350px] w-full max-w-[410px] sm:h-[410px] lg:h-[470px]">
+                            {/* Profile Image -> fills the box, scales on every screen */}
+                            <div className="absolute bottom-0 left-1/2 z-10 h-full w-full max-w-[430px] -translate-x-1/2">
                                 <Image
                                     src="/abu-sufian.png"
                                     alt="Abu Sufian - MERN Stack Developer"
@@ -211,16 +213,13 @@ function Hero() {
                             </div>
 
                             {/* Floating Glass Cube 1 */}
-                            <div className="absolute left-0 top-20 h-12 w-12 rotate-[-25deg] rounded-lg border border-white/80 bg-gradient-to-br from-white/70 to-[#62caff]/30 shadow-[0_0_20px_rgba(0,145,255,0.25)] backdrop-blur-md sm:h-14 sm:w-14" />
+                            <div className="absolute left-0 top-20 h-10 w-10 rotate-[-25deg] rounded-lg border border-white/80 bg-gradient-to-br from-white/70 to-[#62caff]/30 shadow-[0_0_20px_rgba(0,145,255,0.25)] backdrop-blur-md sm:h-14 sm:w-14" />
 
                             {/* Floating Glass Cube 2 */}
-                            <div className="absolute bottom-28 right-2 h-12 w-12 rotate-[25deg] rounded-lg border border-white/80 bg-gradient-to-br from-white/70 to-[#62caff]/30 shadow-[0_0_20px_rgba(0,145,255,0.25)] backdrop-blur-md" />
+                            <div className="absolute bottom-28 right-2 h-10 w-10 rotate-[25deg] rounded-lg border border-white/80 bg-gradient-to-br from-white/70 to-[#62caff]/30 shadow-[0_0_20px_rgba(0,145,255,0.25)] backdrop-blur-md sm:h-12 sm:w-12" />
 
                             {/* Floating Glass Cube 3 */}
                             <div className="absolute right-0 top-2 hidden h-14 w-14 rotate-12 rounded-lg border border-white/80 bg-gradient-to-br from-white/70 to-[#62caff]/30 shadow-lg backdrop-blur-md sm:block" />
-
-                            {/* Light Streak */}
-                            {/* <div className="absolute bottom-20 left-[-20px] z-20 h-[2px] w-[110%] rotate-[-12deg] bg-gradient-to-r from-transparent via-white to-[#087df5] shadow-[0_0_12px_3px_rgba(0,136,255,0.55)]" /> */}
 
                         </div>
                     </section>
@@ -269,7 +268,6 @@ function Hero() {
 
                 </div>
             </div>
-            <div className=" pointer-events-none absolute -left-48 -top-80 h-[480px] w-[480px] rounded-full border-[65px] border-[#75c7ff]/40" />
         </>
     )
 }

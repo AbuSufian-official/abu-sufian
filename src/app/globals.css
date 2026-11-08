@@ -36,6 +36,61 @@
     }
 }
 
+/* ===== ABOUT PAGE ===== */
+
+/* Slow steady rotation (dashed rings, orbiting dots) */
+@keyframes spin-slow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Breathing glow behind the portrait */
+@keyframes glow-pulse {
+    0%,
+    100% {
+        opacity: 0.55;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
+/* Tech cards: staggered pop-in when a tab switches */
+@keyframes card-pop {
+    from {
+        opacity: 0;
+        transform: translateY(18px) scale(0.94);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Timeline: light pulse travelling down the track line */
+@keyframes line-travel {
+    0% {
+        top: -20%;
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 1;
+    }
+    100% {
+        top: 110%;
+        opacity: 0;
+    }
+}
+
 /* Scroll reveal */
 .reveal {
     opacity: 0;
@@ -110,7 +165,14 @@
 
     .wave-layer,
     .wave-bob,
-    .wave-bubble {
+    .wave-bubble,
+    .about-deco,
+    .tech-card,
+    .work-card {
         animation: none !important;
+    }
+
+    .mouse-glow {
+        transition: none !important;
     }
 }

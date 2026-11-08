@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight, FaPause, FaPlay, FaStar } from "react-icons/fa";
 
@@ -14,70 +15,48 @@ import { FaArrowRight, FaPause, FaPlay, FaStar } from "react-icons/fa";
 
 const projects = [
     {
-        id: "arij",
-        title: "Arij As Sunnah",
-        category: "Non-Profit",
-        description: "Modern website for an Islamic NGO with donation flow and content hub.",
-        tags: ["React", "Next.js", "MongoDB"],
+        id: "bazardor",
+        title: "Bazar Dor",
+        category: "Market Prices",
+        description:
+            "Daily market price tracker that compares essential grocery prices across local markets in Bangladesh.",
+        tags: ["Next.js", "React", "Tailwind"],
         url: "https://github.com/",
         featured: true,
-        monogram: "AS",
-        gradient: "linear-gradient(135deg, #0b7df5 0%, #38b6ff 55%, #e8f7ff 100%)",
+        image: "/bazardor.png",
     },
     {
-        id: "dental",
-        title: "Best Dental Clinic",
-        category: "Healthcare",
-        description: "Appointment booking platform with dashboards for doctors and patients.",
-        tags: ["Next.js", "Node.js", "Tailwind"],
-        url: "https://github.com/",
-        featured: false,
-        monogram: "BD",
-        gradient: "linear-gradient(135deg, #04a5ff 0%, #7fd4ff 50%, #ffffff 100%)",
-    },
-    {
-        id: "tapyzon",
-        title: "Tapyzon",
-        category: "E-Commerce",
-        description: "Full stack storefront with cart, Stripe payments and admin panel.",
-        tags: ["React", "Redux", "Stripe"],
+        id: "booknook",
+        title: "BookNook",
+        category: "Online Library",
+        description:
+            "Book borrowing platform with explore, borrow, return, and personal shelf management.",
+        tags: ["React", "Node.js", "MongoDB"],
         url: "https://github.com/",
         featured: true,
-        monogram: "TZ",
-        gradient: "linear-gradient(135deg, #062a52 0%, #0b7df5 60%, #59c3ff 100%)",
+        image: "/BookNook.png",
     },
     {
-        id: "shishu",
-        title: "Shishu Academy",
-        category: "Education",
-        description: "Learning portal with courses, quizzes and progress tracking.",
-        tags: ["Next.js", "MongoDB", "JWT"],
+        id: "devstack",
+        title: "DevStack",
+        category: "Developer Platform",
+        description:
+            "Developer resource hub for tutorials, code snippets, tools, and community sharing.",
+        tags: ["Next.js", "Tailwind", "MongoDB"],
         url: "https://github.com/",
         featured: false,
-        monogram: "SA",
-        gradient: "linear-gradient(135deg, #0057b8 0%, #00a2ff 45%, #cfeeff 100%)",
+        image: "/devstack.png",
     },
     {
-        id: "taskflow",
-        title: "TaskFlow Dashboard",
-        category: "SaaS",
-        description: "Realtime team dashboard with kanban boards and analytics charts.",
-        tags: ["React", "Vite", "Firebase"],
+        id: "fitlog",
+        title: "FitLog",
+        category: "Health & Fitness",
+        description:
+            "Fitness dashboard to track workouts, calories, weekly activity, and personal goals.",
+        tags: ["React", "Node.js", "MongoDB"],
         url: "https://github.com/",
         featured: false,
-        monogram: "TF",
-        gradient: "linear-gradient(135deg, #0891b2 0%, #38bdf8 50%, #f0faff 100%)",
-    },
-    {
-        id: "recipe",
-        title: "Recipe Corner",
-        category: "Web App",
-        description: "Recipe social app with search, bookmarks and community reviews.",
-        tags: ["MERN", "Express", "Cloudinary"],
-        url: "https://github.com/",
-        featured: true,
-        monogram: "RC",
-        gradient: "linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #dbeafe 100%)",
+        image: "/FITLOG.png",
     },
 ];
 
@@ -209,42 +188,22 @@ function Projects() {
                                             className="group relative flex h-full w-[265px] flex-col overflow-hidden rounded-3xl border border-white/80 bg-white/75 shadow-[0_6px_24px_rgba(35,125,210,0.12)] backdrop-blur-xl transition-all duration-500 hover:-translate-y-2.5 hover:border-[#5cc6ff] hover:shadow-[0_24px_48px_rgba(8,125,245,0.30)] sm:w-[310px] lg:w-[345px]"
                                         >
                                             {/* ===== COVER ===== */}
-                                            <div
-                                                className="relative h-[185px] shrink-0 overflow-hidden sm:h-[205px]"
-                                                style={{ background: project.gradient }}
-                                            >
-                                                {/* Grid pattern */}
-                                                <div
-                                                    className="absolute inset-0 opacity-25"
-                                                    style={{
-                                                        backgroundImage:
-                                                            "linear-gradient(rgba(255,255,255,.4) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.4) 1px, transparent 1px)",
-                                                        backgroundSize: "26px 26px",
-                                                    }}
+                                            <div className="relative h-[185px] shrink-0 overflow-hidden bg-[#eaf5ff] sm:h-[205px]">
+                                                {/* Project artwork */}
+                                                <Image
+                                                    src={project.image}
+                                                    alt={`${project.title} — ${project.category} project preview`}
+                                                    fill
+                                                    sizes="(max-width: 640px) 265px, (max-width: 1024px) 310px, 345px"
+                                                    className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
                                                 />
 
-                                                {/* Floating bubbles */}
-                                                <span className="absolute -left-6 -top-6 h-24 w-24 rounded-full bg-white/25 animate-[float-y_3.5s_ease-in-out_infinite]" />
-                                                <span className="absolute -bottom-8 right-4 h-20 w-20 rounded-full bg-white/20 animate-[float-y_4.5s_ease-in-out_infinite_0.6s]" />
-
-                                                {/* Mock browser bar */}
-                                                <div className="absolute inset-x-3 top-3 flex items-center gap-1.5 rounded-xl border border-white/50 bg-white/25 px-3 py-2 backdrop-blur-md">
-                                                    <span className="h-2 w-2 rounded-full bg-white/90" />
-                                                    <span className="h-2 w-2 rounded-full bg-white/70" />
-                                                    <span className="h-2 w-2 rounded-full bg-white/50" />
-                                                    <span className="ml-2 h-3.5 flex-1 rounded-full bg-white/40" />
-                                                </div>
-
-                                                {/* Monogram logo */}
-                                                <div className="absolute left-1/2 top-1/2 flex h-[72px] w-[72px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-2xl border border-white/70 bg-white/85 shadow-[0_12px_30px_rgba(4,42,82,0.35)] transition-all duration-500 group-hover:scale-110 group-hover:-rotate-6">
-                                                    <span className="text-2xl font-black tracking-tight text-[#087df5]">
-                                                        {project.monogram}
-                                                    </span>
-                                                </div>
+                                                {/* Subtle depth / bottom fade */}
+                                                <span className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#04203d]/30 via-transparent to-transparent" />
 
                                                 {/* Featured badge */}
                                                 {project.featured && (
-                                                    <span className="absolute left-3 top-14 inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-[#087df5] to-[#04a5ff] px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-white shadow-[0_6px_16px_rgba(8,125,245,0.45)]">
+                                                    <span className="absolute right-3 top-3 z-10 inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-[#087df5] to-[#04a5ff] px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-white shadow-[0_6px_16px_rgba(8,125,245,0.45)]">
                                                         <FaStar className="animate-pulse" />
                                                         Featured
                                                     </span>
@@ -259,7 +218,7 @@ function Projects() {
                                                 </span>
 
                                                 {/* View Project button */}
-                                                <span className="absolute bottom-4 left-1/2 flex translate-y-8 items-center gap-2 whitespace-nowrap rounded-full bg-white px-5 py-2.5 text-[11px] font-black uppercase tracking-wider text-[#087df5] opacity-0 shadow-[0_12px_28px_rgba(4,42,82,0.45)] transition-all duration-500 delay-100 ease-out group-hover:translate-y-0 group-hover:opacity-100 group-hover:shadow-[0_16px_34px_rgba(4,42,82,0.55)]">
+                                                <span className="absolute bottom-4 left-1/2 z-10 flex translate-y-8 items-center gap-2 whitespace-nowrap rounded-full bg-white px-5 py-2.5 text-[11px] font-black uppercase tracking-wider text-[#087df5] opacity-0 shadow-[0_12px_28px_rgba(4,42,82,0.45)] transition-all duration-500 delay-100 ease-out group-hover:translate-y-0 group-hover:opacity-100 group-hover:shadow-[0_16px_34px_rgba(4,42,82,0.55)]">
                                                     View Project
                                                     <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1.5" />
                                                 </span>
@@ -330,7 +289,7 @@ function Projects() {
 
                     {/* View All Projects */}
                     <Link
-                        href="#projects"
+                        href="/projects"
                         className="group inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r from-[#087df5] to-[#079fff] px-6 py-3.5 text-xs font-black text-white shadow-[0_10px_26px_rgba(8,125,245,0.38)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_36px_rgba(8,125,245,0.5)]"
                     >
                         View All Projects

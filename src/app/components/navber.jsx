@@ -15,11 +15,11 @@ const Navbar = () => {
 
     const navLinks = [
         { name: "Home", href: "/", icon: <FiHome /> },
-        { name: "About", href: "#about" },
-        { name: "Projects", href: "#projects" },
-        { name: "Articles", href: "#articles" },
-        { name: "Uses", href: "#uses" },
-        { name: "Contact", href: "#contact" },
+        { name: "About", href: "/about" },
+        { name: "Projects", href: "/projects" },
+        // { name: "Articles", href: "#articles" },
+        // { name: "Uses", href: "#uses" },
+        { name: "Contact", href: "/contact" },
     ];
 
     return (

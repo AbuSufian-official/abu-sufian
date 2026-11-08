@@ -29,10 +29,9 @@ import {
 
 const navLinks = [
     { name: "Home", href: "/", icon: <FaHome /> },
-    { name: "About", href: "#about", icon: <FaUser /> },
-    { name: "Project", href: "#projects", icon: <FaFolderOpen /> },
-    { name: "Articles", href: "#articles", icon: <FaNewspaper /> },
-    { name: "Contact", href: "#contact", icon: <FaEnvelope /> },
+    { name: "About", href: "/about", icon: <FaUser /> },
+    { name: "Project", href: "/projects", icon: <FaFolderOpen /> },
+    { name: "Contact", href: "/contact", icon: <FaEnvelope /> },
 ];
 
 const connectLinks = [
@@ -44,26 +43,26 @@ const connectLinks = [
     },
     {
         label: "WhatsApp",
-        value: "+880 1786 123456",
-        href: "https://wa.me/8801786123456",
+        value: "+880 01618562254",
+        href: "https://wa.me/8801618562254",
         icon: <FaWhatsapp />,
     },
     {
         label: "LinkedIn",
         value: "/in/abusufian",
-        href: "https://www.linkedin.com/in/abusufian",
+        href: "https://www.linkedin.com/in/abusufian001/",
         icon: <FaLinkedinIn />,
     },
     {
         label: "GitHub",
         value: "github.com/abu-sufian",
-        href: "https://github.com/abu-sufian",
+        href: "https://github.com/AbuSufian-official",
         icon: <FaGithub />,
     },
     {
         label: "Direct Call",
-        value: "+880 1786 123456",
-        href: "tel:+8801786123456",
+        value: "+880 1618562254",
+        href: "tel:+8801618562254",
         icon: <FaPhone />,
     },
 ];
@@ -319,9 +318,7 @@ function Footer() {
 
                     {/* Made with love */}
                     <p className="flex items-center gap-1.5 text-xs font-bold text-white/90 sm:text-sm">
-                        Made with
-                        <FaHeart className="text-[#ff7aa8] transition-transform duration-300 hover:scale-125" />
-                        for a better web
+                       ABU SUFIAN
                     </p>
                 </div>
             </div>

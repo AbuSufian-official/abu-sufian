@@ -24,6 +24,7 @@ import {
     SiMongodb,
     SiTailwindcss,
 } from "react-icons/si";
+import { FaFacebook } from "react-icons/fa";
 
 import { FiMenu, FiX, FiCode } from "react-icons/fi";
 
@@ -149,20 +150,17 @@ function Hero() {
                                 {[
                                     {
                                         icon: <FaGithub />,
-                                        href: "https://github.com/",
+                                        href: "https://github.com/AbuSufian-official",
                                     },
                                     {
                                         icon: <FaLinkedin />,
-                                        href: "https://linkedin.com/",
+                                        href: "https://www.linkedin.com/in/abusufian001/",
                                     },
                                     {
-                                        icon: <FaXTwitter />,
-                                        href: "https://x.com/",
+                                        icon: <FaFacebook />,
+                                        href: "https://www.facebook.com/abu.sufian.siam.600887",
                                     },
-                                    {
-                                        icon: <FaYoutube />,
-                                        href: "https://youtube.com/",
-                                    },
+                                    
                                 ].map((social, index) => (
                                     <a
                                         key={index}

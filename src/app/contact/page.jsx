@@ -34,20 +34,20 @@ const contactInfo = [
     {
         icon: FiPhone,
         title: "PHONE",
-        value: "+880 1786 123456",
-        link: "tel:+8801786123456",
+        value: "+880 01618562254",
+        link: "tel:+8801618562254",
     },
     {
         icon: FiMessageCircle,
         title: "WHATSAPP",
         value: "Chat on WhatsApp",
-        link: "https://wa.me/8801786123456",
+        link: "https://wa.me/8801618562254",
     },
     {
         icon: FiMapPin,
         title: "LOCATION",
         value: "Dhaka, Bangladesh · Serving Worldwide",
-        link: "https://maps.google.com/?q=Dhaka+Bangladesh",
+        link: "#",
     },
     {
         icon: FiClock,
@@ -61,12 +61,12 @@ const socialLinks = [
     {
         name: "GitHub",
         icon: FiGithub,
-        link: "https://github.com/abu-sufian",
+        link: "https://github.com/AbuSufian-official",
     },
     {
         name: "LinkedIn",
         icon: FiLinkedin,
-        link: "https://www.linkedin.com/in/abusufian",
+        link: "https://www.linkedin.com/in/abusufian001/",
     },
 ];
 

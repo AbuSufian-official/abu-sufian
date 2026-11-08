@@ -21,7 +21,7 @@ const projects = [
         description:
             "Daily market price tracker that compares essential grocery prices across local markets in Bangladesh.",
         tags: ["Next.js", "React", "Tailwind"],
-        url: "https://github.com/",
+        url: "https://bazar-dor-sand-beta.vercel.app/",
         featured: true,
         image: "/bazardor.png",
     },
@@ -32,7 +32,7 @@ const projects = [
         description:
             "Book borrowing platform with explore, borrow, return, and personal shelf management.",
         tags: ["React", "Node.js", "MongoDB"],
-        url: "https://github.com/",
+        url: "https://booknook-mauve-seven.vercel.app/",
         featured: true,
         image: "/BookNook.png",
     },
@@ -43,7 +43,7 @@ const projects = [
         description:
             "Developer resource hub for tutorials, code snippets, tools, and community sharing.",
         tags: ["Next.js", "Tailwind", "MongoDB"],
-        url: "https://github.com/",
+        url: "https://dev-stack-jade.vercel.app",
         featured: false,
         image: "/devstack.png",
     },
@@ -54,7 +54,7 @@ const projects = [
         description:
             "Fitness dashboard to track workouts, calories, weekly activity, and personal goals.",
         tags: ["React", "Node.js", "MongoDB"],
-        url: "https://github.com/",
+        url: "https://fitlog-tau-six.vercel.app",
         featured: false,
         image: "/FITLOG.png",
     },

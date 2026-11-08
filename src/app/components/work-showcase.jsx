@@ -74,7 +74,7 @@ const projects = [
         description:
             "Daily market price tracker that compares essential grocery prices across local markets in Bangladesh.",
         tags: ["Next.js", "React", "Tailwind"],
-        url: "https://github.com/",
+        url: "https://bazar-dor-sand-beta.vercel.app/",
         domain: "bazardor.app",
         image: "/bazardor.png",
         hoverImage: "/bazardor-website.png",
@@ -87,7 +87,7 @@ const projects = [
         description:
             "Book borrowing platform with explore, borrow, return, and personal shelf management.",
         tags: ["React", "Node.js", "MongoDB"],
-        url: "https://github.com/",
+        url: "https://booknook-mauve-seven.vercel.app/",
         domain: "booknook.app",
         image: "/BookNook.png",
         hoverImage: "/booknook-website.png",
@@ -100,7 +100,7 @@ const projects = [
         description:
             "Developer resource hub for tutorials, code snippets, tools, and community sharing.",
         tags: ["Next.js", "Tailwind", "MongoDB"],
-        url: "https://github.com/",
+        url: "https://dev-stack-jade.vercel.app",
         domain: "devstack.dev",
         image: "/devstack.png",
         hoverImage: "/devstack-website.png",
@@ -113,7 +113,7 @@ const projects = [
         description:
             "Fitness dashboard to track workouts, calories, weekly activity, and personal goals.",
         tags: ["React", "Node.js", "MongoDB"],
-        url: "https://github.com/",
+        url: "https://fitlog-tau-six.vercel.app",
         domain: "fitlog.app",
         image: "/FITLOG.png",
         hoverImage: "/fitlog-website.png",
@@ -404,7 +404,7 @@ function WorkShowcase() {
                     />
                     <span className="hidden h-12 w-px bg-[#087df5]/25 sm:block" />
                     <Stat
-                        value={3}
+                        value={1}
                         suffix="+"
                         label="Years Exp"
                         start={visible}
@@ -494,7 +494,7 @@ function WorkShowcase() {
                     style={{ transitionDelay: "120ms" }}
                 >
                     <a
-                        href="https://github.com/"
+                        href="https://github.com/AbuSufian-official"
                         target="_blank"
                         rel="noreferrer"
                         className="group inline-flex items-center gap-2.5 rounded-full bg-gradient-to-r from-[#087df5] to-[#079fff] px-6 py-3.5 text-xs font-black text-white shadow-[0_10px_26px_rgba(8,125,245,0.38)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_36px_rgba(8,125,245,0.5)]"

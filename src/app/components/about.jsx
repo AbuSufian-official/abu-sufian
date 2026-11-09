@@ -51,7 +51,7 @@ function About() {
                 <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
 
                     {/* ===== LEFT CONTENT ===== */}
-                    <div className="space-y-5">
+                    <div className="space-y-5" data-gsap-stagger>
                         {/* Badge */}
                         <span className="inline-flex items-center gap-2 rounded-full border border-white/80 bg-white/70 px-4 py-1.5 text-xs font-bold text-[#087df5] shadow-sm backdrop-blur-md">
                             <FaArrowRight className="rotate-180 text-[10px]" />
@@ -89,7 +89,7 @@ function About() {
                     </div>
 
                     {/* ===== RIGHT FEATURE CARDS ===== */}
-                    <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 lg:gap-5">
+                    <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 lg:gap-5" data-gsap-stagger>
                         {features.map((feature) => (
                             <div
                                 key={feature.title}

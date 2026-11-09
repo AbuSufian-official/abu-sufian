@@ -143,7 +143,7 @@ function AboutPage() {
                 {/* ---------- Content ---------- */}
                 <div className="relative z-10 mx-auto flex w-full max-w-[1200px] flex-1 flex-col px-4 pb-6 pt-8 sm:px-6 lg:px-8">
                     {/* ===== TOP: NAME + TITLE ===== */}
-                    <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between md:gap-8">
+                    <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between md:gap-8" data-gsap-load-stagger>
                         {/* Hello, I'm — Abu Sufian */}
                         <div>
                             <span className="text-sm font-bold tracking-wide text-[#087df5]">
@@ -170,7 +170,7 @@ function AboutPage() {
                     </div>
 
                     {/* ===== CENTER: PORTRAIT (bigger, with design elements) ===== */}
-                    <div className="relative mt-6 flex min-h-[420px] flex-1 items-end justify-center sm:min-h-[500px] lg:min-h-[560px]">
+                    <div className="relative mt-6 flex min-h-[420px] flex-1 items-end justify-center sm:min-h-[500px] lg:min-h-[560px]" data-gsap-load="scale">
                         {/* Breathing blue glow behind the portrait */}
                         <div className="about-deco pointer-events-none absolute bottom-4 h-[360px] w-[360px] animate-[glow-pulse_5s_ease-in-out_infinite] rounded-full bg-[#087df5]/25 blur-[80px] sm:h-[480px] sm:w-[480px]" />
 
@@ -223,7 +223,7 @@ function AboutPage() {
                     </div>
 
                     {/* ===== BOTTOM: SOCIAL RAIL + RESUME BUTTON ===== */}
-                    <div className="relative mt-6 flex items-end justify-between gap-4">
+                    <div className="relative mt-6 flex items-end justify-between gap-4" data-gsap-load-stagger>
                         {/* Social icons — vertical on desktop, row on mobile */}
                         <div className="flex gap-3 lg:flex-col lg:gap-4">
                             {socials.map((social) => (
@@ -266,7 +266,7 @@ function AboutPage() {
                 <div className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-white/50 blur-2xl" />
 
                 <div className="relative z-10 mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
-                    <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
+                    <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-12" data-gsap-stagger>
                         {/* ===== LEFT: STORY ===== */}
                         <div className="space-y-5">
                             {/* Badge */}
@@ -361,7 +361,7 @@ function AboutPage() {
 
                 <div className="relative z-10 mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
                     {/* ===== Section Header ===== */}
-                    <div className="max-w-[720px]">
+                    <div className="max-w-[720px]" data-gsap-stagger>
                         <span className="inline-flex items-center gap-2 rounded-full border border-white/80 bg-white/70 px-4 py-1.5 text-[11px] font-black tracking-widest text-[#087df5] uppercase shadow-sm backdrop-blur-md">
                             02 / The Genesis &amp; Evolution
                         </span>
@@ -381,7 +381,7 @@ function AboutPage() {
                     </div>
 
                     {/* ===== Chapter Cards (2x2) ===== */}
-                    <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:mt-12 lg:gap-7">
+                    <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:mt-12 lg:gap-7" data-gsap-stagger>
                         {chapters.map((chapter) => (
                             <article
                                 key={chapter.chapter}

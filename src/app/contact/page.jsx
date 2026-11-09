@@ -146,7 +146,7 @@ console.log(data)
 
             <section className="relative z-10 mx-auto w-full max-w-[1200px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
                 {/* ================= Section Heading ================= */}
-                <header className="mx-auto max-w-[720px] text-center">
+                <header className="mx-auto max-w-[720px] text-center" data-gsap-stagger>
                     <span className="inline-flex items-center gap-2 rounded-full border border-white/80 bg-white/70 px-4 py-2 text-[11px] font-black uppercase tracking-[0.2em] text-[#087df5] shadow-sm shadow-[#087df5]/10 backdrop-blur-md">
                         <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#087df5]" />
                         Get in touch
@@ -184,7 +184,7 @@ console.log(data)
                 </header>
 
                 {/* ================= Contact Grid ================= */}
-                <div className="mt-12 grid grid-cols-1 items-start gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:gap-7">
+                <div className="mt-12 grid grid-cols-1 items-start gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:gap-7" data-gsap-stagger>
                     {/* ================= Left: Contact Information ================= */}
                     <aside className="group relative overflow-hidden rounded-3xl border border-white/80 bg-white/70 p-6 shadow-[0_10px_40px_rgba(35,125,210,0.12)] backdrop-blur-xl transition-all duration-500 hover:-translate-y-1 hover:border-[#5cc6ff] hover:shadow-[0_24px_60px_rgba(8,125,245,0.2)] sm:p-8">
                         {/* Card decoration */}

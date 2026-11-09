@@ -3,6 +3,7 @@ import "./globals.css";
 import { Bounce, ToastContainer } from 'react-toastify';
 import Navbar from "./components/navber";
 import Footer from "./components/footer";
+import ScrollFX from "./components/scroll-fx";
 
 
 
@@ -30,12 +31,13 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
       <body className="min-h-full flex flex-col bg-blue-100">
         <Navbar/>
         {children}
         <Footer/>
+        <ScrollFX/>
        
 
 

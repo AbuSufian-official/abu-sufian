@@ -161,7 +161,7 @@ function Footer() {
 
             {/* ===== CONTENT ===== */}
             <div className="relative z-10 mx-auto max-w-[1200px] px-5 pb-6 pt-[120px] sm:px-6 sm:pt-[150px] lg:px-8 lg:pt-[170px]">
-                <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.35fr_0.95fr_1.25fr_1.05fr] lg:gap-0">
+                <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.35fr_0.95fr_1.25fr_1.05fr] lg:gap-0" data-gsap-stagger>
 
                     {/* ---------- 1) LOGO + TAGLINE ---------- */}
                     <div className="lg:pr-8">
@@ -288,7 +288,7 @@ function Footer() {
                 </div>
 
                 {/* ---------- BOTTOM BAR ---------- */}
-                <div className="mt-10 flex flex-col items-center gap-3 rounded-3xl border border-white/25 bg-white/10 px-5 py-4 backdrop-blur-md transition-all duration-300 hover:border-white/45 hover:bg-white/15 sm:mt-12 sm:flex-row sm:justify-between sm:gap-4 sm:rounded-full lg:px-7">
+                <div className="mt-10 flex flex-col items-center gap-3 rounded-3xl border border-white/25 bg-white/10 px-5 py-4 backdrop-blur-md transition-all duration-300 hover:border-white/45 hover:bg-white/15 sm:mt-12 sm:flex-row sm:justify-between sm:gap-4 sm:rounded-full lg:px-7" data-gsap>
                     {/* Date */}
                     <span className="flex items-center gap-2 text-xs font-bold text-white sm:text-sm">
                         <FaCalendarAlt className="text-[#8fd8ff]" />

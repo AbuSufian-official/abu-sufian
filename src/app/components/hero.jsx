@@ -94,7 +94,7 @@ function Hero() {
 
                         {/* LEFT CONTENT */}
 
-                        <div className=" relative z-20  space-y-4 md:order-1">
+                        <div className=" relative z-20  space-y-4 md:order-1" data-gsap-load-stagger>
 
                             {/* Availability */}
                             <div className="inline-flex items-center gap-2 rounded-full border border-green-100 bg-[#087ff5fb] px-3 py-1 text-[10px] font-bold text-[#ffff]">
@@ -179,7 +179,7 @@ function Hero() {
                         {/* ================= RIGHT IMAGE ================= */}
 
                         {/* Height scales with screen size -> image stays responsive */}
-                        <div className="relative flex h-[300px] items-end justify-center sm:h-[360px] md:order-2 md:h-[400px] lg:h-[470px]">
+                        <div className="relative flex h-[300px] items-end justify-center sm:h-[360px] md:order-2 md:h-[400px] lg:h-[470px]" data-gsap-load="scale">
 
                             {/* Outer Circle */}
                             <div className="absolute bottom-0 left-1/2 h-[270px] w-[270px] -translate-x-1/2 rounded-full border border-white/50 sm:h-[340px] sm:w-[340px] md:h-[380px] md:w-[380px] lg:h-[450px] lg:w-[450px]" />
@@ -225,7 +225,7 @@ function Hero() {
 
                     {/* ================= TECHNOLOGY BAR ================= */}
 
-                    <section className="relative z-30 rounded-2xl border border-white/80 bg-white/45 px-4 py-5 shadow-[0_5px_25px_rgba(35,125,210,0.10)] backdrop-blur-xl sm:px-8">
+                    <section className="relative z-30 rounded-2xl border border-white/80 bg-white/45 px-4 py-5 shadow-[0_5px_25px_rgba(35,125,210,0.10)] backdrop-blur-xl sm:px-8" data-gsap-load>
 
                         <div className="grid grid-cols-2 items-center gap-5 sm:grid-cols-3 lg:grid-cols-7 lg:gap-3">
 

@@ -171,7 +171,7 @@ function TechStack() {
             {/* ---------- Content ---------- */}
             <div className="relative z-10 mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
                 {/* Header */}
-                <div className="max-w-[760px]">
+                <div className="max-w-[760px]" data-gsap-stagger>
                     <span className="inline-flex items-center gap-2 rounded-full border border-white/80 bg-white/70 px-4 py-1.5 text-[11px] font-black tracking-widest text-[#087df5] uppercase shadow-sm backdrop-blur-md">
                         04 / Skills &amp; Tech Stack
                     </span>
@@ -196,6 +196,7 @@ function TechStack() {
                     role="tablist"
                     aria-label="Technology groups"
                     className="mt-8 flex flex-wrap gap-3"
+                    data-gsap
                 >
                     {groups.map((group) => {
                         const isActive = active === group.id;
@@ -237,6 +238,7 @@ function TechStack() {
                     key={active}
                     role="tabpanel"
                     className="mt-9 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 lg:gap-5"
+                    data-gsap
                 >
                     {visible.map((tech, i) => (
                         <div

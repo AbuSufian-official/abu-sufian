@@ -166,7 +166,7 @@ function Timeline() {
             {/* ---------- Content ---------- */}
             <div className="relative z-10 mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
                 {/* Header */}
-                <div className="max-w-[720px]">
+                <div className="max-w-[720px]" data-gsap-stagger>
                     <span className="inline-flex items-center gap-2 rounded-full border border-white/80 bg-white/70 px-4 py-1.5 text-[11px] font-black tracking-widest text-[#087df5] uppercase shadow-sm backdrop-blur-md">
                         05 / Track Record
                     </span>

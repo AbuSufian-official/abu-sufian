@@ -134,7 +134,7 @@ function Hero() {
                                 </Link>
 
                                 <a
-                                    href="/cv.pdf"
+                                    href="/abu-sufian-developer-cv.pdf"
                                     download
                                     className="flex items-center gap-2 rounded-full border border-[#80baff] bg-white/80 px-5 py-3 text-xs font-bold text-[#172d49] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:bg-white"
                                 >

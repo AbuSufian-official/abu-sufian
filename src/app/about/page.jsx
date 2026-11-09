@@ -242,7 +242,7 @@ function AboutPage() {
 
                         {/* Resume download button */}
                         <a
-                            href="/cv.pdf"
+                            href="/abu-sufian-developer-cv.pdf"
                             download
                             className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#087df5] to-[#079fff] px-6 py-3 text-xs font-black tracking-wider text-white uppercase shadow-lg shadow-blue-300/60 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
                         >
@@ -296,7 +296,7 @@ function AboutPage() {
 
                             {/* Download resume (secondary) */}
                             <a
-                                href="/cv.pdf"
+                                href="/abu-sufian-developer-cv.pdf"
                                 download
                                 className="group inline-flex items-center gap-2 rounded-full border border-[#80baff] bg-white/80 px-6 py-3 text-sm font-bold text-[#172d49] shadow-sm backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-lg"
                             >

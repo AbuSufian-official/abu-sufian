@@ -57,7 +57,7 @@ const Navbar = () => {
 
                     {/* Let's Talk Button */}
                     <Link
-                        href="#contact"
+                        href="/contact"
                         className="hidden items-center gap-2 rounded-full bg-[#087cf5] px-4 py-2.5 text-xs font-bold text-white shadow-[0_3px_12px_rgba(0,124,245,0.3)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#0068dc] md:flex"
                     >
                         Let's Talk
@@ -93,7 +93,7 @@ const Navbar = () => {
                         ))}
 
                         <Link
-                            href="#contact"
+                            href="/contact"
                             onClick={() => setIsOpen(false)}
                             className="flex items-center justify-center gap-2 rounded-xl bg-[#087cf5] px-4 py-3 text-sm font-bold text-white"
                         >
